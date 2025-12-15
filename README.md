@@ -5,28 +5,17 @@ This project implements a Multimodal Deep Learning model to classify music track
 
 The project is organized into 5 notebooks:
 
-1) EDA.ipynb
+1) **`EDA.ipynb`**
   Performs exploratory data analysis.
-3) text_processing.ipynb
+3) **`text_processing.ipynb`**
 Performs natural language processing tasks, including text cleaning, tokenization, and lemmatization.
-4) audio_processing.ipynb
+4) **`audio_processing.ipynb`**
 Extracts and aggregates 37 acoustic features, such as MFCCs, Chroma, and Spectral Contrast. It prepares the audio data by normalizing these statistical features for model training
-6) modeling.ipynb
+6) **`modeling.ipynb`**
 We trained 4 ML algorithms (Logistic regression, SVN, Random forest and KNN) for text-only, audio-only and text+audio baselines. Logistic regression for text+audio model has the best results.
-7) dl_modeling.ipynb
+7) **`dl_modeling.ipynb`**
 We trained deep learning models (tried text-only, audio-only models and combined model with a BERT encoder (for text) and an MLP (for audio)).
 
-
-
-
-|----------|-------------|
-| **`EDA.ipynb`** | Exploratory Data Analysis. Visualization of class distribution, correlation matrices, and t-SNE projections of audio/text features. |
-| **`text_processing.ipynb`** | Natural Language Processing steps: cleaning, lemmatization, and sentiment analysis. Preparation of data for BERT. |
-| **`audio_processing.ipynb`** | Extraction and normalization of 37 handcrafted audio features (MFCC, Spectral Contrast, RMS, etc.) using `librosa`. |
-| **`modeling.ipynb`** | **Classical ML Baselines.** Training 4 algorithms (Logistic Regression, SVM, Random Forest, KNN) across three setups: *Text-only*, *Audio-only*, and *Text+Audio*. |
-| **`dl_modeling.ipynb`** | **Deep Learning Model (SOTA).** Implementation of the Multimodal Classifier with Attention Fusion, MixUp regularization, and OneCycleLR scheduler. |
-
----
 
 ## Model Architectures
 
